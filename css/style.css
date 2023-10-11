@@ -495,10 +495,14 @@ textarea {
 
 .header {
   position: fixed;
-  width: 100%;
+  width: 90%;
+  transform: translate(5%,15%);
   z-index: 1000;
   background: #000;
-  background: #fff;
+  background: #b3b3b38e;
+  backdrop-filter: blur(9px);
+  border-radius: 32px;
+  
   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1); }
   .header__content {
     display: flex;
@@ -508,71 +512,71 @@ textarea {
     @media only screen and (max-width: 56.25em) {
       .header__content {
         padding: 0 2rem; } }
-  .header__logo-container {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    color: #333;
-    transition: color .3s; }
-    .header__logo-container:hover {
-      color: #00c29b; }
-  .header__logo-img-cont {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50px;
-    overflow: hidden;
-    margin-right: 1.5rem;
-    background: #00c29b; }
-    @media only screen and (max-width: 56.25em) {
-      .header__logo-img-cont {
-        width: 4.5rem;
-        height: 4.5rem;
-        margin-right: 1.2rem; } }
-  .header__logo-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block; }
-  .header__logo-sub {
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 1px; }
-  .header__links {
-    display: flex; }
-    @media only screen and (max-width: 37.5em) {
-      .header__links {
-        display: none; } }
-  .header__link {
-    padding: 2.2rem 3rem;
-    display: inline-block;
-    font-size: 1.6rem;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 700;
-    transition: color .3s; }
-    .header__link:hover {
-      color: #00c29b; }
-    @media only screen and (max-width: 56.25em) {
-      .header__link {
-        padding: 3rem 1.8rem;
-        font-size: 1.5rem; } }
-  .header__main-ham-menu-cont {
-    display: none;
-    width: 3rem;
-    padding: 2.2rem 0; }
-    @media only screen and (max-width: 37.5em) {
-      .header__main-ham-menu-cont {
-        display: block; } }
-  .header__main-ham-menu {
-    width: 100%; }
-  .header__main-ham-menu-close {
-    width: 100%; }
-  .header__sm-menu {
-    background: #fff;
-    position: absolute;
+        .header__logo-container {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          color: #333;
+          transition: color .3s; }
+          .header__logo-container:hover {
+            color: #00c29b; }
+            .header__logo-img-cont {
+              width: 5rem;
+              height: 5rem;
+              border-radius: 50px;
+              overflow: hidden;
+              margin-right: 1.5rem;
+              background: #00c29b; }
+              @media only screen and (max-width: 56.25em) {
+                .header__logo-img-cont {
+                  width: 4.5rem;
+                  height: 4.5rem;
+                  margin-right: 1.2rem; } }
+                  .header__logo-img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    display: block; }
+                    .header__logo-sub {
+                      font-size: 1.8rem;
+                      text-transform: uppercase;
+                      font-weight: 700;
+                      letter-spacing: 1px; }
+                      .header__links {
+                        display: flex; }
+                        @media only screen and (max-width: 37.5em) {
+                          .header__links {
+                            display: none; } }
+                            .header__link {
+                              padding: 2.2rem 3rem;
+                              display: inline-block;
+                              font-size: 1.6rem;
+                              color: #333;
+                              text-transform: uppercase;
+                              letter-spacing: 1px;
+                              font-weight: 700;
+                              transition: color .3s; }
+                              .header__link:hover {
+                                color: #00c29b; }
+                                @media only screen and (max-width: 56.25em) {
+                                  .header__link {
+                                    padding: 3rem 1.8rem;
+                                    font-size: 1.5rem; } }
+                                    .header__main-ham-menu-cont {
+                                      display: none;
+                                      width: 3rem;
+                                      padding: 2.2rem 0; }
+                                      @media only screen and (max-width: 37.5em) {
+                                        .header__main-ham-menu-cont {
+                                          display: block; } }
+                                          .header__main-ham-menu {
+                                            width: 100%; }
+                                            .header__main-ham-menu-close {
+                                              width: 100%; }
+                                              .header__sm-menu {
+                                                background: #fff;
+                                                position: absolute;
     width: 100%;
     top: 100%;
     visibility: hidden;
