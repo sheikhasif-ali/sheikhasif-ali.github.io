@@ -68,6 +68,7 @@ html {
 }
 
 body {
+  transition: background-color 1.5s ease-in;
   background-color: var(--primary-color);
   box-sizing: border-box;
   position: relative;
@@ -108,8 +109,7 @@ textarea {
   font-size: 6rem;
   text-transform: uppercase;
   letter-spacing: 3px;
-  text-align: center;
-}
+  text-align: center}
 
 @media only screen and (max-width: 37.5em) {
   .heading-primary {
@@ -150,7 +150,9 @@ textarea {
 }
 
 .heading-sec__main--lt {
-  color: var(--secondary-color);
+  color: var(--text-color-primary);
+  transition:color 1.5s ease;
+
 }
 
 .heading-sec__main--lt::after {
@@ -179,7 +181,7 @@ textarea {
 .heading-sec__sub {
   display: block;
   text-align: center;
-  color: #777;
+  color: #eee;
   font-size: 2rem;
   font-weight: 500;
   max-width: 80rem;
@@ -194,7 +196,9 @@ textarea {
 }
 
 .heading-sec__sub--lt {
-  color: #eee;
+  color: var(--text-color-primary);
+  transition:color 1.5s ease;
+
 }
 
 .heading-sm {
@@ -211,6 +215,7 @@ textarea {
 
 .btn {
   background: var(--primary-color);
+  transition: background-color 1.5s ease-in;
   color: #333;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -265,7 +270,7 @@ textarea {
   font-weight: 600;
   text-align: center;
   text-shadow: 2px 2px 3px var(--secondary-color);
-
+  transition: background-color 1.5s ease-in;
   width: 100%;
   line-height: 1.6;
 }
@@ -291,20 +296,22 @@ textarea {
   padding-left: 20px;
   margin-top: auto;
   margin-bottom: auto;
-
+  
 }
 
 .home-hero {
   color: var(--primary-color);
   background: url(../../assets/jpeg/whiteNoiseBG.jpeg);
   background-size: contain;
-
+  transition: filter 1.5s ease-in;
+  box-shadow: 0 0 120px var(--primary-blur);
   background-position: center;
   height: 100vh;
   min-height: 80rem;
   max-height: 120rem;
   position: relative;
 }
+
 
 @media only screen and (max-width: 37.5em) {
   .home-hero {
@@ -361,6 +368,7 @@ textarea {
 }
 
 .home-hero__social-icon {
+  transition: filter 1.5s ease-in;
   width: 100%;
   filter: invert();
 }
@@ -395,6 +403,7 @@ textarea {
 
 .about {
   background: var(--primary-color);
+  transition: background-color 1.5s ease-in;
 }
 
 .about__content {
@@ -473,6 +482,7 @@ textarea {
   width: 100%;
   display: block;
   object-fit: cover;
+  
 }
 
 .projects__row-content {
@@ -517,15 +527,17 @@ textarea {
 }
 
 .contact {
-  background: linear-gradient(to right, rgba(0, 56, 55, 0.7), rgba(0, 194, 155, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: ease-in-gradient(to right, rgba(0, 56, 55, 0.7), rgba(0, 194, 155, 0.8)), url(../../assets/svg/common-bg.svg);
+
   background-size: cover;
   background-position: center;
 }
 
 .contact__form-container {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 12px var(--text-color-primary);
   background: var(--primary-color);
   padding: 4rem;
+  transition: background-color 1.5s ease-in;
   margin-top: 6rem;
   max-width: 80rem;
   text-align: right;
@@ -561,6 +573,7 @@ textarea {
 }
 
 .contact__form-input {
+  transition: background-color 1.5s ease-in;
   color: #333;
   padding: 2rem;
   width: 100%;
@@ -617,6 +630,7 @@ textarea {
 }
 
 .contact__btn {
+  transition: background-color 1.5s ease-in;
   width: 30%;
   padding: 2rem 4rem;
   font-size: 1.6rem;
@@ -630,7 +644,7 @@ textarea {
 
 .project-cs-hero {
   color: var(--primary-color);
-  background: linear-gradient(to right, rgba(0, 194, 155, 0.8), rgba(0, 194, 155, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: ease-in-gradient(to right, rgba(0, 194, 155, 0.8), rgba(0, 194, 155, 0.8)), url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -777,6 +791,7 @@ textarea {
   position: fixed;
   width: 90%;
   transform: translate(5%, 15%);
+  transition: background-color 1.5s ease-in;
   z-index: 1000;
   /* background: var(--teal-blue); */
   background: radial-gradient(circle at center, var(--gradient1), var(--gradient2));
@@ -791,6 +806,8 @@ textarea {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 5rem;
+  transition:color 1.5s ease;
+
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -878,6 +895,8 @@ textarea {
   display: inline-block;
   font-size: 1.6rem;
   color: var(--text-color-primary);
+  transition:background-color 1.5s ease;
+
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
@@ -1055,6 +1074,18 @@ textarea {
     padding: 3.5rem 0;
   }
 }
+
+.icon {
+  
+  transition: transform 0.8s ease; /* Add a transition for the scale effect */
+}
+
+.icon.active {
+  transform: translate3d(-30px, 0px, 0px) scale(1.3); /* Increase the size when active */
+}
+
+
+
 
 .skills {
   display: flex;
