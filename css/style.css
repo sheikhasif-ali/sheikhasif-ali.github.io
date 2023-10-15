@@ -762,7 +762,15 @@ textarea {
 
 
 
+.darkIcon{
+  max-width: 100%;
+    height: auto;
+}
 
+.darkIcon img {
+  max-width: 100%;
+  height: auto;
+}
 
 
 .header {
