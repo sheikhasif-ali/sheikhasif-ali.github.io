@@ -290,14 +290,14 @@ textarea {
   transform: scale(0.8);
 }
 
-#icon {
-  height: 75px;
+/* #icon {
+  width: 75%;
   cursor: pointer;
   padding-left: 20px;
   margin-top: auto;
   margin-bottom: auto;
   
-}
+} */
 
 .home-hero {
   color: var(--primary-color);
@@ -1078,7 +1078,12 @@ textarea {
 
 .icon {
   
-  transition: transform 0.8s ease; /* Add a transition for the scale effect */
+  transition: transform 0.8s ease;
+  width: 75px;
+  cursor: pointer;
+  padding-left: 20px;
+  margin-top: auto;
+  margin-bottom: auto; /* Add a transition for the scale effect */
 }
 
 .icon.active {
