@@ -35,8 +35,8 @@ icon.onclick = function(){
 var image = document.querySelector('.home-hero');
 // var darkMode = document.body.classList.contains("dark-theme"); // Check if dark mode is active
 var imageSources = {
-    light: "assets/jpeg/whiteNoiseBG.jpeg",
-    dark: "assets/jpeg/darkNoiseBG.jpg"
+    light: "assets/jpeg/whiteFade.jpg",
+    dark: "assets/jpeg/darkFade.jpg"
 };
 function toggleDarkModeSlowly() {
   icon.classList.add("active");
@@ -56,9 +56,9 @@ function toggleDarkModeSlowly() {
 
           // Toggle between two background images
           if (darkMode) {
-            image.style.backgroundImage = 'url(assets/jpeg/darkNoiseBG.jpg)';
+            image.style.backgroundImage = 'url(assets/jpeg/darkFade.jpg)';
           } else {
-            image.style.backgroundImage = 'url(assets/jpeg/whiteNoiseBG.jpeg)';
+            image.style.backgroundImage = 'url(assets/jpeg/whiteFade.jpg)';
           }
 
           fadeIn();

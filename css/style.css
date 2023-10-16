@@ -301,11 +301,12 @@ textarea {
 
 .home-hero {
   color: var(--primary-color);
-  background: url(../../assets/jpeg/whiteNoiseBG.jpeg);
-  background-size: contain;
+  background: url(../../assets/jpeg/whiteFade.jpg);
+  background-size: 100% auto;
   transition: filter 1.5s ease-in;
-  box-shadow: 0 0 120px var(--primary-blur);
-  background-position: center;
+  /* box-shadow: 0 0 120px var(--primary-blur); */
+  background-repeat: no-repeat;
+  background-position: top;
   height: 100vh;
   min-height: 80rem;
   max-height: 120rem;
