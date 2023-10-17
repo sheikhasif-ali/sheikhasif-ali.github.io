@@ -4,8 +4,16 @@ const smallMenu = document.querySelector('.header__sm-menu')
 const headerHamMenuBtn = document.querySelector('.header__main-ham-menu')
 const headerHamMenuCloseBtn = document.querySelector(
   '.header__main-ham-menu-close'
-)
-const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link')
+  )
+  const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link')
+  
+  var gitIco = document.getElementById("githubIcon");
+  var linkIco = document.getElementById("linkedInIcon");  
+  var switcher = document.getElementById("themeSwitch");
+  var noise = document.getElementById("noisePattern")
+  var hamOpen = document.getElementById("hamOpen");
+  var hamClose = document.getElementById("themeSwitch");
+
 var icon = document.getElementById("icon");
 var darkMode;
 icon.onclick = function(){
@@ -19,6 +27,8 @@ icon.onclick = function(){
     homeHero.style.backgroundImage = "invert(0)";
     gitIco.style.filter = "invert(0)"; // Revert to original colors
     linkIco.style.filter = "invert(0)"; // Revert to original colors
+    hamOpen.style.filter = "invert(1)";
+    hamClose.style.filter = "invert(1)";
     toggleDarkModeSlowly();
   } else {
     darkMode = false;
@@ -27,6 +37,8 @@ icon.onclick = function(){
     homeHero.style.backgroundImage = "invert(1)";
     gitIco.style.filter = "invert(1)"; 
     linkIco.style.filter = "invert(1)";
+    hamOpen.style.filter = "invert(0)";
+    hamClose.style.filter = "invert(0)";
     toggleDarkModeSlowly();
 
     }
@@ -79,10 +91,6 @@ function toggleDarkModeSlowly() {
 }
 
 
-var gitIco = document.getElementById("githubIcon");
-var linkIco = document.getElementById("linkedInIcon");  
-var switcher = document.getElementById("themeSwitch");
-var noise = document.getElementById("noisePattern")
 
 
 let inverted = false;
