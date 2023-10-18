@@ -13,6 +13,7 @@ const headerHamMenuCloseBtn = document.querySelector(
   var noise = document.getElementById("noisePattern")
   var hamOpen = document.getElementById("hamOpen");
   var hamClose = document.getElementById("themeSwitch");
+  
 
 var icon = document.getElementById("icon");
 var darkMode;
@@ -102,6 +103,8 @@ switcher.addEventListener("click", () => {
         inverted = true;
     }
 });
+
+
 
 
 
