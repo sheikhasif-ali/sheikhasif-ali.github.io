@@ -32,9 +32,9 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
   --neu-light: #ffffff;
   --neu-dark: #8a8a8a;
   --neu-dark-project: #dbdbdb;
-  
-  
-  
+
+
+
 }
 
 .dark-theme {
@@ -508,17 +508,27 @@ textarea {
 .projects__row-img-cont {
   overflow: hidden;
   border-radius: 32px;
-background: linear-gradient(225deg, var(--neu-dark-project), var(--neu-light));
-box-shadow:  -20px 20px 40px var(--neu-dark),
-             20px -20px 40px var(--neu-light);
-             transition: transform 1.7s cubic-bezier(0.2, 1, 0.2 , 1);
+  background: linear-gradient(225deg, var(--neu-dark-project), var(--neu-light));
+  box-shadow: -20px 20px 40px var(--neu-dark),
+    20px -20px 40px var(--neu-light);
+  transition: transform 1.7s cubic-bezier(0.2, 1, 0.2, 1);
+  text-align: center;
+  position: relative;
 }
+
+.projects__row-img-cont video {
+  
+
+    
+}
+
+
 
 .projects__row-img {
   width: 100%;
   display: block;
   object-fit: cover;
-  
+
 
 }
 
@@ -850,7 +860,7 @@ box-shadow:  -20px 20px 40px var(--neu-dark),
   justify-content: space-between;
   padding: 1rem 5rem;
   transition: color 1.5s ease;
-  
+
 
 
 }
@@ -1148,7 +1158,7 @@ box-shadow:  -20px 20px 40px var(--neu-dark),
   flex-wrap: wrap;
   /* justify-content: space-around; */
   align-items: center;
-  
+
 
 }
 
