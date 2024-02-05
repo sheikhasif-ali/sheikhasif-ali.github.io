@@ -137,3 +137,24 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+
+
+
+const menuButton = document.getElementById('menu');
+let lastScrollPosition = 0;
+
+window.addEventListener('scroll', function() {
+  const scrollPosition = window.scrollY;
+  const scrollDirection = scrollPosition - lastScrollPosition > 0 ? 'down' : 'up'; // Determine scroll direction
+
+  if (scrollDirection === 'down') {
+    menuButton.classList.add('hidden_menu');
+  } else {
+    menuButton.classList.remove('hidden_menu');
+  }
+
+  lastScrollPosition = scrollPosition;
+});
+
+
