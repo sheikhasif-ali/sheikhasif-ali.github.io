@@ -24,7 +24,7 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
 :root {
   --primary-color: #f3f3f3;
   --secondary-color: #eaeaea;
-  --teal-blue: #00dbba;
+  --teal-blue: #41ac41;
   --text-color-primary: #161616;
   --primary-blur: #b9b9b9a0;
   --gradient1: #b9b9b9a0;
@@ -40,7 +40,7 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
 .dark-theme {
   --primary-color: #161616;
   --secondary-color: #2d2d2d;
-  --teal-blue: #007765;
+  --teal-blue: #378337;
   --text-color-primary: #f3f3f3;
   --primary-blur: #474747a0;
   --gradient1: #474747a0;
@@ -1247,12 +1247,16 @@ textarea {
   background-color: #262a35;
 }
 
+
+
 .slide > img {
-  display: block;
-  width: 50em;
-  height: auto;
+  display: flex;
   align-items: center;
-  object-fit: contain;
+  
+  width: 100%;
+  height: 100%;
+  
+  object-fit: fill;
   object-position: center;
 }
 
