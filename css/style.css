@@ -1301,13 +1301,12 @@ textarea {
 
 /* timeline */
 .timeline {
-  --color: rgba(30, 30, 30);
-  --bgColor: rgba(245, 245, 245);
+  --color: var(--primary-color);
+  --bgColor: var(--bgColor);
   --accent-color: rgba(0, 123, 255);
   /* Add this if not defined earlier */
   margin: 12px;
 
-  background: rgba(153, 153, 153, 0.2);
   border-radius: 32px;
   font-weight: 600;
   color: var(--text-color-primary);
@@ -1331,7 +1330,7 @@ textarea {
   align-content: center;
   gap: 2rem;
   padding: 2rem;
-  color: var(--color);
+  color: var(--text-color-primary);
   background: var(--bgColor);
 }
 
@@ -1435,7 +1434,7 @@ textarea {
   font-size: 18px;
 }
 
-.timeline ul li .title::before,
+/* .timeline ul li .title::before,
 .timeline ul li .descr::before {
   content: "";
   position: absolute;
@@ -1446,7 +1445,7 @@ textarea {
   border-radius: 50%;
   filter: blur(4px);
   transform: translate(-50%, 50%);
-}
+} */
 
 .timeline ul li .title::before {
   bottom: calc(100% + 0.125rem);
