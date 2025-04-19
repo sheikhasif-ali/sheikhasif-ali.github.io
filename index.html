@@ -8,6 +8,7 @@
     <meta name="description" content="Portfolio Template for Developer" />
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/neuomorphicHover.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -81,6 +82,23 @@
             class="icon"
           />
         </div>
+        <div>
+          <button id="navCollapseBtn" class="nav-collapse-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="#ff9ee0"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+        </div>
       </div>
       <div class="header__sm-menu">
         <div class="header__sm-menu-content">
@@ -105,7 +123,9 @@
               </a>
             </li>
             <li class="header__sm-menu-link">
-              <a href="assets\pdf\SheikhAsifAli_MobileDev_Resume.pdf">Resume </a>
+              <a href="assets\pdf\SheikhAsifAli_MobileDev_Resume.pdf"
+                >Resume
+              </a>
             </li>
           </ul>
         </div>
@@ -115,16 +135,14 @@
       <div class="home-hero__content">
         <h1 class="heading-primary">
           Hi, i'm<br /><i>sheikh asif ali</i>
-          <br>
-          <span style="font-size: 24px; border: 4px solid black; padding: 5px; display: inline-block;">Crafting smarter tech, one project at a time.</span>
-
-
+          <br />
+          <span style="color: #ff4fc3 ;font-size: 24px; padding: 5px; display: inline-block"
+            >Crafting smarter tech, one app at a time.</span
+          >
         </h1>
         <div class="home-hero__info">
           <p class="text-primary">
-            I am an Mobile Developer experienced in building Cross Platofrm and
-            Native Android Apps using modern architectures and best practices in
-            the industry.
+            I am an Software Developer passionate about crafting scalable, high-quality Android and Flutter apps using modern design patterns and robust architecture.
           </p>
         </div>
         <div class="home-hero__cta">
@@ -136,6 +154,20 @@
         </div>
       </div>
       <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a
+            href="https://play.google.com/store/apps/dev?id=8106996547935861497"
+            class="home-hero__social-icon-link"
+          >
+            <img
+              src="./assets/svg/googlePlay.svg"
+              alt="icon"
+              class="home-hero__social-icon"
+              id="googlePlayIcon"
+              style="filter: invert(0)"
+            />
+          </a>
+        </div>
         <div class="home-hero__social">
           <a
             href="https://linkedin.com/in/sheikh-asif-ali"
@@ -171,7 +203,7 @@
       <div class="main-container">
         <div class="about__content">
           <div class="about__content-main">
-            <h3 class="about__content-title">More About Me...</h3>
+            <h3 class="about__content-title">About Me...</h3>
             <div class="about__content-details">
               <p class="about__content-details-para">
                 I am a self taught Developer. I graduated in
@@ -244,10 +276,15 @@
       </div>
     </section>
     <div class="timeline">
-      <h1>History</h1>
+      <h1>Work History</h1>
       <ul>
+        <li style="--accent-color: #dd303a">
+          <div class="date">March 2025 - Present</div>
+          <div class="title">Downtown IELTS & Immigration</div>
+          <div class="descr">Android Developer</div>
+        </li>
         <li style="--accent-color: #41516c">
-          <div class="date">August 2024 - February 2025</div>
+          <div class="date">August 2024 - March 2025</div>
           <div class="title">Blue Planet InfoSolutions</div>
           <div class="descr">Android Developer Intern</div>
         </li>
@@ -258,6 +295,9 @@
         </li>
       </ul>
     </div>
+
+
+
     <section id="projects" class="projects sec-pad">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-bg">
@@ -267,399 +307,564 @@
           </span>
         </h2>
 
-        <div class="projects__content">
-          <!-- section start -->
-          <div id="Noted" class="projects__row">
-            <div class="projects__row-img-cont">
-              <video controls autoplay height="100%" width="40%">
-                <source src="assets/videos/noted.webm" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+        <!-- Two-Level Neuomorphic Navigation (Start) -->
+        <div class="nm-container">
+          <!-- Primary Navigation -->
+          <div class="nm-primary-tabs">
+            <button
+              class="nm-primary-tab-btn nm-active"
+              data-nm-category="android"
+            >
+              Native Android
+            </button>
+            <button class="nm-primary-tab-btn" data-nm-category="flutter">
+              Flutter
+            </button>
+            <button class="nm-primary-tab-btn" data-nm-category="other">
+              Other
+            </button>
+            <div class="nm-primary-indicator"></div>
+          </div>
+
+          <!-- Secondary Navigation -->
+          <div class="nm-secondary-tabs-container">
+            <!-- Android Projects -->
+            <div class="nm-secondary-tabs nm-active" id="nm-android-tabs">
+              <button
+                class="nm-secondary-tab-btn nm-active"
+                data-nm-project="android-project1"
+              >
+                Hue Calculator
+              </button>
+              <button
+                class="nm-secondary-tab-btn"
+                data-nm-project="android-project2"
+              >
+                Chatty
+              </button>
+              <button
+                class="nm-secondary-tab-btn"
+                data-nm-project="android-project3"
+              >
+                Classified Project
+              </button>
+              <div class="nm-secondary-indicator"></div>
             </div>
 
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Noted</h3>
-              <p class="projects__row-content-desc">
-                <br /><br />
-                A note-taking application built using
-                <span style="color: #43d3f6"><b>Flutter</b></span> and
-                <span style="color: #dd2c00"><b>Firebase</b></span
-                >. The app features Firebase integration for user registration,
-                login, and authentication, ensuring secure user access.
-                Additionally, I implemented cloud storage for user notes using
-                Firebase, allowing data synchronization across devices. For
-                local storage, I used SQLite to ensure data accessibility even
-                when offline, providing users with a seamless experience. I also
-                used Bloc for state management, and used a mix of MVVM and Clean
-                Architecture. <br>It is still a Work In Progress and I intend to add
-                more features in the future, and even publish it .
-                <br />
-                <br />
-                I made this app following this tutorial
-                <a
-                  href="https://youtu.be/VPvVD8t02U8?si=Ax3cDjy1M7FgL71z"
-                  style="color: rgb(0, 123, 255); text-decoration: underline"
-                  >Here</a
-                >
-                <br /><br />
-                <span style="color: darkslategrey"
-                  >Built using <b><i>Flutter, Dart, Firebase </i></b></span
-                >
-              </p>
+            <!-- Flutter Projects -->
+            <div class="nm-secondary-tabs" id="nm-flutter-tabs">
+              <button
+                class="nm-secondary-tab-btn nm-active"
+                data-nm-project="flutter-project1"
+              >
+                Noted
+              </button>
+              <button
+                class="nm-secondary-tab-btn"
+                data-nm-project="flutter-project2"
+              >
+                NewsWala
+              </button>
+              <button
+                class="nm-secondary-tab-btn"
+                data-nm-project="flutter-project3"
+              >
+                Masterstroke
+              </button>
+              <div class="nm-secondary-indicator"></div>
+            </div>
+
+            <!-- Other Projects -->
+            <div class="nm-secondary-tabs" id="nm-other-tabs">
+              <button
+                class="nm-secondary-tab-btn nm-active"
+                data-nm-project="other-project1"
+              >
+                Portfolio Website
+              </button>
+              <button
+                class="nm-secondary-tab-btn"
+                data-nm-project="other-project2"
+              >
+                Digital Wellbeing-Stats
+              </button>
+              <button
+                class="nm-secondary-tab-btn"
+                data-nm-project="other-project3"
+              >
+                AuthorGram
+              </button>
+              <button
+                class="nm-secondary-tab-btn"
+                data-nm-project="other-project4"
+              >
+                TicTacToe
+              </button>
+              <div class="nm-secondary-indicator"></div>
             </div>
           </div>
-          <!--section break-->
-          <!-- section start -->
-          <div id="newsWala" class="projects__row">
-            <div class="projects__row-img-cont">
-              <video controls autoplay height="100%" width="40%">
-                <source src="assets/videos/newsWala.webm" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
 
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">News Wala</h3>
-              <p class="projects__row-content-desc">
-                <br /><br />
-                A News App made using
-                <span style="color: #43d3f6"><b>Flutter</b></span> and Dart as a
-                project to learn the tech. Made specifically for mobile devices.
-                The app fetches and displays the latest news using the NEWS API.
-                The project uses
-                <span style="color: #43d3f6"><b>Flutter</b></span> as the UI
-                framework, with Dart running the logic of the app. API requests
-                are made using the <strong>Dio</strong> package to fetch data
-                from the NEWS API. Contains a Search Feature to find specific
-                stories.
-                <br />
-                <br />
-                <a
-                  href="https://github.com/sheikhasif-ali/news_wala"
-                  style="color: rgb(0, 123, 255); text-decoration: underline"
-                  >Source Code & Download </a
-                ><br /><br />
-                <span style="color: darkslategrey"
-                  >Built using <b><i>Flutter, Dart</i></b></span
-                >
-              </p>
-            </div>
-          </div>
-          <!--section break-->
+          <!-- Project Content Area -->
+          <div class="nm-content-container">
+            <!-- Android Projects Content -->
+            <div class="nm-category-content nm-active" id="nm-android-content">
+              <!-- Android Project 1 -->
+              <div class="nm-project-content nm-active" id="android-project1">
+                <div class="nm-project-card">
+                  <div class="nm-project-media">
+                    <video controls autoplay height="100%" width="100%">
+                      <source
+                        src="assets/videos/hueCalculator.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
 
-          <!-- section start -->
-          <div id="hueCalculator" class="projects__row">
-            <div class="projects__row-img-cont">
-              <video controls autoplay height="100%" width="40%">
-                <source
-                  src="assets/videos/hueCalculator.mp4"
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
-            </div>
+                    <!-- <img
+                    src="/api/placeholder/230/400"
+                    alt="Android Project 1"
+                    class="nm-project-image"
+                  /> -->
+                  </div>
+                  <div class="nm-project-details">
+                    <h2 class="nm-project-title">Hue Calculator</h2>
+                    <div class="nm-project-description">
+                      <p>
+                        Unleash a calculator that bursts with
+                        <span style="color: red">c</span>
+                        <span style="color: orange">o</span>
+                        <span style="color: rgb(0, 149, 255)">l</span>
+                        <span style="color: green">o</span>
+                        <span style="color: rgb(255, 0, 230)">r</span>! Watch as
+                        the buttons <b>change color with every click</b>,
+                        transforming your calculations into a captivating visual
+                        experience.
+                      </p>
+                      <p>
+                        Plus, explore
+                        <b>Light and Dark modes</b> to match your environment or
+                        preference. Calculate with style and watch your numbers
+                        come to life!
+                      </p>
+                      <p>
+                        <a
+                          href="https://play.google.com/store/apps/details?id=com.huecalculator"
+                          style="
+                            color: rgb(0, 123, 255);
+                            text-decoration: underline;
+                          "
+                          >Playstore
+                        </a>
+                      </p>
 
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Hue Calculator</h3>
-              <p class="projects__row-content-desc">
-                Unleash a calculator that bursts with
-                <span style="color: red">c</span>
-                <span style="color: orange">o</span>
-                <span style="color: rgb(0, 149, 255)">l</span>
-                <span style="color: green">o</span>
-                <span style="color: rgb(255, 0, 230)">r</span>! Watch as the
-                buttons <b>change color with every click</b>, transforming your
-                calculations into a captivating visual experience. Plus, explore
-                <b>Light and Dark modes</b> to match your environment or
-                preference. Calculate with style and watch your numbers come to
-                life! <br /><br />
+                      <div class="nm-tech-stack">
+                        Built using <span class="nm-tech">Kotlin</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.huecalculator"
-                  style="color: rgb(0, 123, 255); text-decoration: underline"
-                  >Playstore </a
-                ><br /><br />
-                <span style="color: darkslategrey"
-                  >Built using <b><i>Kotlin, Java, XML</i></b></span
-                >
-              </p>
-            </div>
-          </div>
-          <!--section break-->
-          <div id="chatty" class="projects__row">
-            <div class="projects__row-img-cont">
-              <video controls autoplay height="100%" width="90%">
-                <source
-                  src="assets/videos/chatyyLinkedin.mov"
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
-            </div>
+              <!-- Android Project 2 -->
+              <div class="nm-project-content" id="android-project2">
+                <div class="nm-project-card">
+                  <div class="nm-project-media">
+                    <video controls autoplay height="100%" width="100%">
+                      <source
+                        src="assets/videos/chatyyLinkedin.mov"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <div class="nm-project-details">
+                    <h2 class="nm-project-title">Chatty</h2>
+                    <div class="nm-project-description">
+                      <p>
+                        <b>Chatty</b> is a sleek Android chat application built
+                        with
+                        <b
+                          ><span style="color: #dd2c00"
+                            ><b>Firebase</b></span
+                          ></b
+                        >, offering real-time messaging, secure user
+                        authentication.
+                      </p>
+                      <p>
+                        Leveraging Firebase Realtime Database and Cloud
+                        Messaging, Chatty ensures instant message delivery.
+                        Chatty provides a modern and user-friendly communication
+                        platform.
+                      </p>
+                      <p>
+                        Designed Material Design principles, it ensures
+                        maintainability, scalability, and an intuitive user
+                        experience.
+                      </p>
+                      <div class="nm-tech-stack">
+                        Built using <span class="nm-tech">Kotlin</span>
+                        <span class="nm-tech">XML</span>
+                        <span class="nm-tech">Firebase</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Chatty</h3>
-              <p class="projects__row-content-desc">
-                <b>Chatty</b> is a sleek Android chat application built with
-                <b
-                  ><span style="color: #dd2c00"><b>Firebase</b></span></b
-                >, offering real-time messaging, secure user authentication.
-                Leveraging Firebase Realtime Database and Cloud Messaging,
-                Chatty ensures instant message delivery. Chatty provides a
-                modern and user-friendly communication platform. Designed
-                Material Design principles, it ensures maintainability,
-                scalability, and an intuitive user experience.<br /><br />
-
-                <a
-                  href="https://github.com/sheikhasif-ali/chatty"
-                  style="color: rgb(0, 123, 255); text-decoration: underline"
-                  >Source Code & Download </a
-                ><br /><br />
-                <span style="color: darkslategrey"
-                  >Built using <b><i>Kotlin, XML</i></b></span
-                >
-              </p>
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="assets\png\whoWroteItMockDual.png"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Who Wrote It</h3>
-              <p class="projects__row-content-desc">
-                Using <b>Google's Book API</b>, this app can find the author of
-                any book. The user only needs to write the name of the book and
-                the author will appear in the result. <br /><span
-                  style="color: darkslategrey"
-                  >Built using <b><i>Java, XML</i></b></span
-                >
-              </p>
-              <br />
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="assets\png\scoreKeeperMockDual.png"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Score Keeper</h3>
-              <p class="projects__row-content-desc">
-                A Score Keeping App with built-in <b>Light/Dark</b> mode button.
-                Offers upto <b>2 Players/Teams</b>, with support for
-                incrementing and decrementing at will.<br />
-                <span style="color: darkslategrey"
-                  >Built using <b><i>Java, XML</i></b></span
-                >
-              </p>
-              <br />
-            </div>
-          </div>
-          <!-- section break -->
-          <div id="tictactoe" class="projects__row">
-            <div class="projects__row-img-cont" style="height: 30rem">
-              <div class="carousel" data-carousel>
-                <button
-                  class="carousel-button prev"
-                  data-carousel-button="prev"
-                >
-                  &#8656;
-                </button>
-                <button
-                  class="carousel-button next"
-                  data-carousel-button="next"
-                >
-                  &#8658;
-                </button>
-                <ul data-slides>
-                  <li class="slide" data-active>
-                    <img src="assets\jpeg\gameplay.jpg" alt="Gameply" />
-                  </li>
-                  <li class="slide">
-                    <img src="assets\jpeg\history.jpg" alt="History" />
-                  </li>
-                  <li class="slide">
-                    <img src="assets\jpeg\login.jpg" alt="Login" />
-                  </li>
-                  <li class="slide">
-                    <img src="assets\jpeg\timesWon.jpg" alt="Times Won" />
-                  </li>
-                </ul>
+              <!-- Android Project 3 -->
+              <div class="nm-project-content" id="android-project3">
+                <div class="nm-project-card">
+                  <div class="nm-project-media">
+                    <img
+                      src="/api/placeholder/230/400"
+                      alt="Android Project 3"
+                      class="nm-project-image"
+                    />
+                  </div>
+                  <div class="nm-project-details">
+                    <h2 class="nm-project-title">To Be Added</h2>
+                    <div class="nm-project-description">
+                      <p>Will add something here soon.</p>
+                      <div class="nm-tech-stack">
+                        Built using <span class="nm-tech">Kotlin</span>
+                        <span class="nm-tech">AI</span>
+                        <span class="nm-tech">SOME COOL API</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Tic Tac Toe</h3>
-              <p class="projects__row-content-desc">
-                I decided to take Tic-Tac-Toe to the next level! The Frontend
-                was created using HTML, CSS and Vanilla JavaScript. Instead of a
-                simple game, I built a database using
-                <span style="color: darkgreen; font-weight: bold"
-                  >Springboot</span
-                >. Now players can enter names that get stored and even check
-                their game history. I kept the theme minimalist for a clean look
-                and used toastr notifications for a touch of polish. It all
-                comes together to make a super engaging and user-friendly
-                game!<br />
-                <br />
-                <span style="color: darkslategrey"
-                  >Built using
-                  <b><i>Java Springboot, HTML, CSS, JavaScript</i></b></span
-                >
-              </p>
-            </div>
-          </div>
+            <!-- Flutter Projects Content -->
+            <div class="nm-category-content" id="nm-flutter-content">
+              <!-- Flutter Project 1 -->
+              <div class="nm-project-content nm-active" id="flutter-project1">
+                <div class="nm-project-card">
+                  <div class="nm-project-media">
+                    <video controls autoplay height="100%" width="100%">
+                      <source src="assets/videos/noted.webm" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <div class="nm-project-details">
+                    <h2 class="nm-project-title">Noted</h2>
+                    <div class="nm-project-description">
+                      <p>
+                        A note-taking application built using
+                        <span class="nm-highlight">Flutter</span> and
+                        <span class="nm-highlight">Firebase</span>. The app
+                        features Firebase integration for user registration,
+                        login, and authentication, ensuring secure user access.
+                      </p>
+                      <p>
+                        Additionally, I implemented cloud storage for user notes
+                        using Firebase, allowing data synchronization across
+                        devices. For local storage, I used SQLite to ensure data
+                        accessibility even when offline, providing users with a
+                        seamless experience.
+                      </p>
+                      <p>
+                        I also used Bloc for state management, and used a mix of
+                        MVVM and Clean Architecture.
+                      </p>
+                      <p>
+                        It is still a Work In Progress and I intend to add more
+                        features in the future, and even publish it.
+                      </p>
+                      <div class="nm-tech-stack">
+                        Built using <span class="nm-tech">Flutter</span>
+                        <span class="nm-tech">Dart</span>
+                        <span class="nm-tech">Firebase</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-          <div id="authorgram" class="projects__row">
-            <div class="projects__row-img-cont">
-              <video controls autoplay height="100%" width="100%">
-                <source src="assets/videos/authorgram.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <!-- section break -->
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">AuthorGram</h3>
-              <p class="projects__row-content-desc">
-                This website is the result of a 24 hour hackathon where I led a
-                team of 3 other memebrs to solve a problem within 24 hours. This
-                is a website which was made for authors and writers so they can
-                write, collab and also save the characters in their story so
-                they can write the detials once and can revisit it anytime to
-                write better stories. This is still a <b>Prototype</b> but will
-                keep adding new features and fix bugs.<br /><br />
+              <!-- Flutter Project 2 -->
+              <div class="nm-project-content" id="flutter-project2">
+                <div class="nm-project-card">
+                  <div class="nm-project-media">
+                    <video controls autoplay height="100%" width="100%">
+                      <source
+                        src="assets/videos/newsWala.webm"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <div class="nm-project-details">
+                    <h2 class="nm-project-title">NewsWala</h2>
+                    <div class="nm-project-description">
+                      <p>
+                        A News App made using
+                        <span style="color: #43d3f6"><b>Flutter</b></span> and
+                        Dart as a project to learn the tech. Made specifically
+                        for mobile devices. The app fetches and displays the
+                        latest news using the NEWS API.
+                      </p>
+                      <p>
+                        The project uses
+                        <span style="color: #43d3f6"><b>Flutter</b></span> as
+                        the UI framework, with Dart running the logic of the
+                        app. API requests are made using the
+                        <strong>Dio</strong> package to fetch data from the NEWS
+                        API. Contains a Search Feature to find specific stories.
+                      </p>
+                      <p>
+                        <a
+                          href="https://github.com/sheikhasif-ali/news_wala"
+                          style="
+                            color: rgb(0, 123, 255);
+                            text-decoration: underline;
+                          "
+                          >Source Code & Download
+                        </a>
+                      </p>
+                      <div class="nm-tech-stack">
+                        Built using <span class="nm-tech">Flutter</span>
+                        <span class="nm-tech">Dart</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-                <a
-                  href="https://authorgram.freewebhostmost.com"
-                  style="color: rgb(0, 123, 255); text-decoration: underline"
-                  >Live Link</a
-                >
-                <br /><br />
-                <span style="color: darkslategrey"
-                  >Built using <b><i>PHP, HTML, CSS, JavaScript </i></b></span
-                >
-              </p>
-            </div>
-          </div>
-          <div id="digitalWellbeing" class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="assets\png\wellbeingStat.png"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <!-- section break -->
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">
-                Digital Wellbeing Stats
-              </h3>
-              <p class="projects__row-content-desc">
-                In this <b>Pure Java</b> Project, I created an application which
-                proceses time data created by an
-                <a
-                  href="https://github.com/christiankyle-ching/DigitalWellbeingForWindows"
-                  style="color: rgb(0, 123, 255); text-decoration: underline"
-                  >existing app</a
-                >
-                and tells the user how much time they have spent using a
-                particular Software in <b>Windows</b>. The user can select a
-                range between which the data should be presented for and can
-                also limit, so the user sees only those apps which have crossed
-                the limit. br
-
-                <a
-                  href="https://github.com/sheikhasif-ali/Wellbeing-Stats"
-                  style="color: rgb(0, 123, 255); text-decoration: underline"
-                  >Source Code & Download
-                </a>
-                <br />
-                <span style="color: darkslategrey"
-                  >Built using <b><i>Java</i></b></span
-                >
-              </p>
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="assets\png\droidCafeMockDual.png"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
+              <!-- Flutter Project 3 -->
+              <div class="nm-project-content" id="flutter-project3">
+                <div class="nm-project-card">
+                  <div class="nm-project-media">
+                    <img alt="Masterstroke" class="nm-project-image" />
+                  </div>
+                  <div class="nm-project-details">
+                    <h2 class="nm-project-title">Masterstroke</h2>
+                    <div class="nm-project-description">
+                      <p>
+                        A work-in-progress app I'm building from scratch for
+                        Downtown IELTS & Immigration, integrating state of the
+                        art AI integrations.
+                      </p>
+                      <div class="nm-tech-stack">
+                        Built using
+                        
+                        <span class="nm-tech"
+                          >Flutter</span
+                        >
+                        <span class="nm-tech"
+                          >Dart</span
+                        >
+                        <span class="nm-tech"
+                          >Bloc</span
+                        >
+                        <span class="nm-tech"
+                          >go_router</span
+                        >
+                        <span class="nm-tech"
+                          > Clean
+                          Architecture</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Droid Cafe</h3>
-              <p class="projects__row-content-desc">
-                In this project, I implemented the
-                <b>UI for a dessert ordering app</b>, and a separate screen to
-                fill in the order information. The information submitted can be
-                used to process further.
-                <br />
-                <span style="color: darkslategrey"
-                  >Built using <b><i>Java, XML</i></b></span
-                >
-              </p>
-              <br />
-            </div>
-          </div>
+            <!-- Other Projects Content -->
+            <div class="nm-category-content" id="nm-other-content">
+              <!-- Other Project 1 -->
+              <div class="nm-project-content nm-active" id="other-project1">
+                <div class="nm-project-card">
+                  <div class="nm-project-media">
+                    <img
+                      src="assets/png/portfolio.png"
+                      alt="You are browising it."
+                      class="nm-project-image"
+                    />
+                  </div>
+                  <div class="nm-project-details">
+                    <h2 class="nm-project-title">Portfolio Website</h2>
+                    <div class="nm-project-description">
+                      <p>
+                        A responsive portfolio website showcasing my projects
+                        and skills. Built with
+                        <span class="nm-highlight">HTML</span>
+                        <span class="nm-highlight">CSS</span>
+                        <span class="nm-highlight">JavaScript</span>
+                      </p>
+                      <p>
+                        The site features smooth scrolling, dynamic content
+                        loading. It's optimized for all devices and screen
+                        sizes.
+                      </p>
+                      <p>I implemented custom animations and transitions.</p>
+                      <div class="nm-tech-stack">
+                        Built using <span class="nm-tech">HTML</span>,
+                        <span class="nm-tech">CSS</span>
+                        <span class="nm-tech">JavaScript</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <video controls autoplay height="100%" width="30%">
-                <source src="assets/videos/roomDatabase.mov" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Using Room Database</h3>
-              <p class="projects__row-content-desc">
-                Utilizing <b>Room Database</b>, this App can be used to store
-                data for the long term, even after killing the app the
-                <b>Data Persists.</b>
-                <br />
-                <span style="color: darkslategrey"
-                  >Built using <b><i>Java, XML</i></b></span
-                >
-              </p>
-              <br />
-            </div>
-          </div>
+              <!-- Other Project 2 -->
+              <div class="nm-project-content" id="other-project2">
+                <div class="nm-project-card">
+                  <div class="nm-project-media">
+                    <img
+                      src="assets\png\wellbeingStat.png"
+                      alt="Software Screenshot"
+                      class="projects__row-img"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="nm-project-details">
+                    <h2 class="nm-project-title">Digital Wellbeing-Stats</h2>
+                    <div class="nm-project-description">
+                      <p>
+                        In this <b>Pure Java</b> Project, I created an
+                        application which proceses time data created by an
+                        <a
+                          href="https://github.com/christiankyle-ching/DigitalWellbeingForWindows"
+                          style="
+                            color: rgb(0, 123, 255);
+                            text-decoration: underline;
+                          "
+                          >existing app</a
+                        >
+                        and tells the user how much time they have spent using a
+                        particular Software in <b>Windows</b>.
+                      </p>
+                      <p>
+                        The user can select a range between which the data
+                        should be presented for and can also limit, so the user
+                        sees only those apps which have crossed the limit.
+                      </p>
+                      <p>
+                        <a
+                          href="https://github.com/sheikhasif-ali/Wellbeing-Stats"
+                          style="
+                            color: rgb(0, 123, 255);
+                            text-decoration: underline;
+                          "
+                          >Source Code & Download
+                        </a>
+                      </p>
+                      <div class="nm-tech-stack">
+                        Built using <span class="nm-tech">Java</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="assets\png\materialMeMockDual.png"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Sports News</h3>
-              <p class="projects__row-content-desc">
-                This project implements the <b>Holo Design</b> Language and Uses
-                <b>Glide</b> to efficiently load images. The cards can be
-                re-ordered and swiped away when not used.
-                <br />
-                <span style="color: darkslategrey"
-                  >Built using <b><i>Java, XML</i></b></span
-                >
-              </p>
-              <br />
+              <!-- Other Project 3 -->
+              <div class="nm-project-content" id="other-project3">
+                <div class="nm-project-card">
+                  <div class="nm-project-media">
+                    <video controls autoplay height="100%" width="100%">
+                      <source
+                        src="assets/videos/authorgram.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <div class="nm-project-details">
+                    <h2 class="nm-project-title">AuthorGram</h2>
+                    <div class="nm-project-description">
+                      <p>
+                        This website is the result of a 24 hour hackathon where
+                        I led a team of 3 other memebrs to solve a problem
+                        within 24 hours.
+                      </p>
+                      <p>
+                        This is a website which was made for authors and writers
+                        so they can write, collab and also save the characters
+                        in their story so they can write the detials once and
+                        can revisit it anytime to write better stories.
+                      </p>
+                      <p>
+                        This was a MVP for out idea, but since hasn't been
+                        worked on.
+                      </p>
+                      <div class="nm-tech-stack">
+                        Built using
+                        <span class="nm-tech">HTML</span>
+                        <span class="nm-tech">CSS</span>
+                        <span class="nm-tech">JavaScript</span>
+                        <span class="nm-tech">PHP</span>
+                        <span class="nm-tech">MySQL</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Other Project 4 -->
+              <div class="nm-project-content" id="other-project4">
+                <div class="nm-project-card">
+                  <div class="nm-project-media">
+                    <div class="carousel" data-carousel>
+                      <button
+                        class="carousel-button prev"
+                        data-carousel-button="prev"
+                      >
+                        &#8656;
+                      </button>
+                      <button
+                        class="carousel-button next"
+                        data-carousel-button="next"
+                      >
+                        &#8658;
+                      </button>
+                      <ul data-slides>
+                        <li class="slide" data-active>
+                          <img src="assets\jpeg\gameplay.jpg" alt="Gameply" />
+                        </li>
+                        <li class="slide">
+                          <img src="assets\jpeg\history.jpg" alt="History" />
+                        </li>
+                        <li class="slide">
+                          <img src="assets\jpeg\login.jpg" alt="Login" />
+                        </li>
+                        <li class="slide">
+                          <img src="assets\jpeg\timesWon.jpg" alt="Times Won" />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="nm-project-details">
+                    <h2 class="nm-project-title">Tic Tac Toe</h2>
+                    <div class="nm-project-description">
+                      <p>
+                        decided to take Tic-Tac-Toe to the next level! The
+                        Frontend was created using HTML, CSS and Vanilla
+                        JavaScript. Instead of a simple game, I built a database
+                        using
+                        <span style="color: darkgreen; font-weight: bold"
+                          >Springboot</span
+                        >.
+                      </p>
+                      <p>
+                        Now players can enter names that get stored and even
+                        check their game history. I kept the theme minimalist
+                        for a clean look and used toastr notifications for a
+                        touch of polish. It all comes together to make a super
+                        engaging and user-friendly game!
+                      </p>
+                      <div class="nm-tech-stack">
+                        Built using
+                        <span class="nm-tech">Java</span>
+                        <span class="nm-tech">Springboot</span>
+                        <span class="nm-tech">HTMX</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -674,6 +879,18 @@
               <span>Social</span>
             </h2>
             <div class="main-footer__social-cont">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://play.google.com/store/apps/dev?id=8106996547935861497"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/svg/googlePlay.svg "    
+                  alt="icon"
+                  style="filter: invert(1)"
+                />
+              </a>
               <a
                 target="_blank"
                 rel="noreferrer"
@@ -728,21 +945,9 @@
           </div>
         </div>
 
-        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
-        <div class="main-footer__lower">
-          Website template Made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
-          <br />
-          Go show some love &#x2764;
-          <br />
-          Customized by Me.
-          <br />
-        </div>
-      </div>
+        
     </footer>
 
     <script src="./index.js"></script>
-  </body>
+      </body>
 </html>
