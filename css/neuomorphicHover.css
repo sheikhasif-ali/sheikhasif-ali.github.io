@@ -33,6 +33,7 @@ body {
     color: var(--text-primary);
     font-family: 'Source Sans Pro', sans-serif;
     transition: all var(--transition-medium);
+    width: fit-content;
 }
 
 /* Cards - Flat to Neuomorphic */

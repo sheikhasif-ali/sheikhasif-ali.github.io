@@ -27,7 +27,7 @@ const headerHamMenuCloseBtn = document.querySelector(
 const headerSmallMenuLinks = document.querySelectorAll(".header__sm-menu-link");
 
 var gitIco = document.getElementById("githubIcon");
-var googlePlayIco = document.getElementById("googlePlayIcon")
+var googlePlayIco = document.getElementById("googlePlayIcon");
 var linkIco = document.getElementById("linkedInIcon");
 var switcher = document.getElementById("themeSwitch");
 var noise = document.getElementById("noisePattern");
@@ -48,7 +48,7 @@ icon.onclick = function () {
     homeHero.style.backgroundImage = "invert(0)";
     gitIco.style.filter = "invert(0)"; // Revert to original colors
     linkIco.style.filter = "invert(0)";
-    googlePlayIco.style.filter = "invert(1)" // Revert to original colors
+    googlePlayIco.style.filter = "invert(1)"; // Revert to original colors
     hamOpen.style.filter = "invert(1)";
     hamClose.style.filter = "invert(1)";
     toggleDarkModeSlowly();
@@ -59,7 +59,7 @@ icon.onclick = function () {
     homeHero.style.backgroundImage = "invert(1)";
     gitIco.style.filter = "invert(1)";
     linkIco.style.filter = "invert(1)";
-    googlePlayIco.style.filter = "invert(0)"
+    googlePlayIco.style.filter = "invert(0)";
     hamOpen.style.filter = "invert(0)";
     hamClose.style.filter = "invert(0)";
     toggleDarkModeSlowly();
@@ -493,19 +493,19 @@ window.addEventListener("scroll", function () {
   }
 })();
 
-document.addEventListener('DOMContentLoaded', function() {
-  collapseBtn()
+document.addEventListener("DOMContentLoaded", function () {
+  collapseBtn();
 });
 
 function collapseBtn() {
-  const collapseBtn = document.getElementById('navCollapseBtn');
-  const header = document.getElementById('menu');
+  const collapseBtn = document.getElementById("navCollapseBtn");
+  const header = document.getElementById("menu");
   if (collapseBtn || header) {
-    collapseBtn.addEventListener('click', function() {
-      header.classList.toggle('header--collapsed');
+    collapseBtn.addEventListener("click", function () {
+      header.classList.toggle("header--collapsed");
     });
   }
-} 
+}
 document.addEventListener("DOMContentLoaded", function () {
   const header = document.querySelector(".header");
 
@@ -518,3 +518,350 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Project data structure
+const projectData = {
+  android: [
+    {
+      name: "Friends Of CJN",
+      media:
+        '<video controls autoplay height="100%" width="100%"><source src="assets/videos/friendsOfCjn.mp4" type="video/mp4" />Your browser does not support the video tag.</video>',
+      description: `<span style="font-weight:bold; color:#2c3e50;">Friends of CJN</span> is an <span style="color:#16a085;">all-in-one job search companion app</span> that integrates directly with the CJN Website. Whether you're job-hunting or tracking your recruitment progress, this app streamlines everything into a simple experience.
+
+<br><br>
+
+<span style="color:#2980b9;">Key Features:</span><br>
+<span style="color:#8e44ad;">•</span> Create and edit a personalized user profile.<br>
+<span style="color:#8e44ad;">•</span> Navigate distinct sections for each recruitment stage: <span style="color:#c0392b;">Assessment</span>, <span style="color:#d35400;">Training</span>, <span style="color:#27ae60;">Interview</span>, and <span style="color:#f39c12;">Job Offer</span>.<br>
+<span style="color:#8e44ad;">•</span> Stay updated with a 24/7 job feed on the <span style="font-weight:bold;">Dashboard</span> and apply instantly.<br><br>
+
+<a href="https://play.google.com/store/apps/details?id=com.bpsi.friendsofcjn" target="_blank" style="color:#2980b9; text-decoration:underline;">View on Play Store</a>
+`,
+      tech: ["Java","Kotlin","XML"],
+    },
+    {
+      name: "Fashion Parade",
+      media:
+        '<video controls autoplay height="100%" width="100%"><source src="assets/videos/fashionParade.mp4" type="video/mp4" />Your browser does not support the video tag.</video>',
+      description: `<span style="font-weight:bold; color:#2c3e50;">Fashion Parade</span> is a talent discovery platform built around <span style="color:#e84393;">Vidumes (video résumés)</span>. It’s a sleek, interactive space for recruiters and talent hunters to explore, rate, and analyze candidates visually.
+
+<br><br>
+
+<span style="color:#2980b9;">What sets it apart?</span><br>
+<span style="color:#8e44ad;">•</span> <span style="font-weight:bold;">Secure login/signup</span> for a personalized experience.<br>
+<span style="color:#8e44ad;">•</span> Watch high-quality Vidumes of aspiring candidates.<br>
+<span style="color:#8e44ad;">•</span> Rate and compare candidates based on user feedback.<br>
+<span style="color:#8e44ad;">•</span> Explore <span style="color:#27ae60;">candidate details</span>: skills, college, and experience.<br><br>
+<span style="font-style:italic;">A one-stop hub to connect talent with opportunity.</span>
+`,
+      tech: ["Java","Kotlin","XML"],
+    },
+    {
+      name: "CJN Tablet",
+      media:
+        '<video controls autoplay height="100%" width="100%"><source src="assets/videos/cjnTablet.mp4" type="video/mp4" />Your browser does not support the video tag.</video>',
+      description: `<span style="font-weight:bold; color:#2c3e50;">CJN Tablet</span> is a companion app designed for tablets, bringing a <span style="color:#16a085;">job-first experience</span> that's deeply integrated with both the CJN Website and the Friends of CJN ecosystem.
+
+<br><br>
+
+<span style="color:#2980b9;">Features include:</span><br>
+<span style="color:#8e44ad;">•</span> Smooth <span style="font-weight:bold;">login</span>.<br>
+<span style="color:#8e44ad;">•</span> Real-time job feed to explore new opportunities.<br>
+<span style="color:#8e44ad;">•</span> Use <span style="color:#d35400;">QR codes</span> to jump straight into assessment or interview rooms.<br>
+<span style="color:#8e44ad;">•</span> Read authentic <span style="color:#27ae60;">feedback</span> from other users.<br>
+<span style="color:#8e44ad;">•</span> Analyze <span style="color:#f39c12;">stats</span> that provide insights about job trends and offers.<br><br>
+
+<a href="https://play.google.com/store/apps/details?id=com.cjn.tabletcjn" target="_blank" style="color:#2980b9; text-decoration:underline;">View on Play Store</a>
+`,
+      tech: ["Java","Kotlin","XML"],
+    },
+    {
+      name: "Hue Calculator",
+      media:
+        '<video controls autoplay height="100%" width="100%"><source src="assets/videos/hueCalculator.mp4" type="video/mp4" />Your browser does not support the video tag.</video>',
+      description: `
+                        <p>Unleash a calculator that bursts with <span style="color: red">c</span><span style="color: orange">o</span><span style="color: rgb(0, 149, 255)">l</span><span style="color: green">o</span><span style="color: rgb(255, 0, 230)">r</span>! Watch as the buttons <strong>change color with every click</strong>, transforming your calculations into a captivating visual experience.</p>
+                        <p>Plus, explore <strong>Light and Dark modes</strong> to match your environment or preference. Calculate with style and watch your numbers come to life!</p>
+                        <p><a href="https://play.google.com/store/apps/details?id=com.huecalculator">Playstore</a></p>
+                    `,
+      tech: ["Kotlin"],
+    },
+    {
+      name: "Chatty",
+      media:
+        '<video controls autoplay height="100%" width="100%"><source src="assets/videos/chatyyLinkedin.mov" type="video/mp4" />Your browser does not support the video tag.</video>',
+      description: `
+                        <p><strong>Chatty</strong> is a sleek Android chat application built with <span style="color: #dd2c00"><strong>Firebase</strong></span>, offering real-time messaging, secure user authentication.</p>
+                        <p>Leveraging Firebase Realtime Database and Cloud Messaging, Chatty ensures instant message delivery. Chatty provides a modern and user-friendly communication platform.</p>
+                        <p>Designed Material Design principles, it ensures maintainability, scalability, and an intuitive user experience.</p>
+                    `,
+      tech: ["Kotlin", "XML", "Firebase"],
+    },
+    {
+      name: "Classified Project",
+      media:
+        '<img src="/api/placeholder/230/400" alt="Android Project 3" style="width: 100%; height: 100%; object-fit: cover;" />',
+      description: `
+                        <p>Will add something here soon.</p>
+                    `,
+      tech: ["Kotlin", "AI", "SOME COOL API"],
+    },
+  ],
+  flutter: [
+    {
+      name: "S.Rocks.Music",
+      media:
+        '<video controls autoplay height="100%" width="100%"><source src="assets/videos/srocksmusic.mp4" type="video/mp4" />Your browser does not support the video tag.</video>',
+      description: `
+                        <p>This was a project assignment for the position of Flutter Developer Intern at <span style="font-weight:bold; color:#a0013b;">S.Rocks.Music</span>. The objective was to recreate the Home Screen from one of their apps using Flutter, to showcase my skills using flutter, firebase and its workings.</p>
+                        <p><a href="https://github.com/sheikhasif-ali/srocksmusic_assignment">Github</a></p>
+                    `,
+      tech: ["Flutter", "Dart", "Firebase", "MVVM","get_it"],
+    },
+    {
+      name: "Noted",
+      media:
+        '<video controls autoplay height="100%" width="100%"><source src="assets/videos/noted.webm" type="video/mp4" />Your browser does not support the video tag.</video>',
+      description: `
+                        <p>A note-taking application built using <strong>Flutter</strong> and <strong>Firebase</strong>. The app features Firebase integration for user registration, login, and authentication, ensuring secure user access.</p>
+                        <p>Additionally, I implemented cloud storage for user notes using Firebase, allowing data synchronization across devices. For local storage, I used SQLite to ensure data accessibility even when offline, providing users with a seamless experience.</p>
+                        <p>I also used Bloc for state management, and used a mix of MVVM and Clean Architecture.</p>
+                        <p>It is still a Work In Progress and I intend to add more features in the future, and even publish it.</p>
+                    `,
+      tech: ["Flutter", "Dart", "Firebase"],
+    },
+    {
+      name: "NewsWala",
+      media:
+        '<video controls autoplay height="100%" width="100%"><source src="assets/videos/newsWala.webm" type="video/mp4" />Your browser does not support the video tag.</video>',
+      description: `
+                        <p>A News App made using <strong style="color: #43d3f6">Flutter</strong> and Dart as a project to learn the tech. Made specifically for mobile devices. The app fetches and displays the latest news using the NEWS API.</p>
+                        <p>The project uses <strong style="color: #43d3f6">Flutter</strong> as the UI framework, with Dart running the logic of the app. API requests are made using the <strong>Dio</strong> package to fetch data from the NEWS API. Contains a Search Feature to find specific stories.</p>
+                        <p><a href="https://github.com/sheikhasif-ali/news_wala">Source Code & Download</a></p>
+                    `,
+      tech: ["Flutter", "Dart"],
+    },
+    {
+      name: "Masterstroke",
+      media:
+        '<img alt="Masterstroke" style="width: 100%; height: 100%; object-fit: cover;" />',
+      description: `
+                        <p>A work-in-progress app I'm building from scratch for Downtown IELTS & Immigration, integrating state of the art AI integrations.</p>
+                    `,
+      tech: ["Flutter", "Dart", "Bloc", "go_router", "Clean Architecture"],
+    },
+    {
+      name: "IMotive by Andaz",
+      media:
+        '<video controls autoplay height="100%" width="100%"><source src="assets/videos/srocksmusic.mp4" type="video/mp4" />Your browser does not support the video tag.</video>',
+      description: `
+                        <p>This was a project assignment for the position of Flutter Developer Intern at <span style="font-weight:bold; color:#a0013b;">IMotive</span>. The objective was to recreate the Home Screen from one of their apps using Flutter, to showcase my skills using flutter, firebase and its workings.</p>
+                        <p><a href="https://github.com/sheikhasif-ali/andaz-assesment">Github</a></p>
+                    `,
+      tech: ["Flutter", "Dart", "Firebase", "MVVM","get_it"],
+    },
+  ],
+  other: [
+    {
+      name: "Portfolio Website",
+      media:
+        '<img src="assets/png/portfolio.png" alt="You are browsing it." style="width: 100%; height: 100%; object-fit: cover;" />',
+      description: `
+                        <p>A responsive portfolio website showcasing my projects and skills. Built with <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.</p>
+                        <p>The site features smooth scrolling, dynamic content loading. It's optimized for all devices and screen sizes.</p>
+                        <p>I implemented custom animations and transitions.</p>
+                    `,
+      tech: ["HTML", "CSS", "JavaScript"],
+    },
+    {
+      name: "Digital Wellbeing-Stats",
+      media:
+        '<img src="assets/png/wellbeingStat.png" alt="Software Screenshot" style="width: 100%; height: 100%; object-fit: cover;" />',
+      description: `
+                        <p>In this <strong>Pure Java</strong> Project, I created an application which processes time data created by an <a href="https://github.com/christiankyle-ching/DigitalWellbeingForWindows">existing app</a> and tells the user how much time they have spent using a particular Software in <strong>Windows</strong>.</p>
+                        <p>The user can select a range between which the data should be presented for and can also limit, so the user sees only those apps which have crossed the limit.</p>
+                        <p><a href="https://github.com/sheikhasif-ali/Wellbeing-Stats">Source Code & Download</a></p>
+                    `,
+      tech: ["Java"],
+    },
+    {
+      name: "AuthorGram",
+      media:
+        '<video controls autoplay height="100%" width="100%"><source src="assets/videos/authorgram.mp4" type="video/mp4" />Your browser does not support the video tag.</video>',
+      description: `
+                        <p>This website is the result of a 24 hour hackathon where I led a team of 3 other members to solve a problem within 24 hours.</p>
+                        <p>This is a website which was made for authors and writers so they can write, collab and also save the characters in their story so they can write the details once and can revisit it anytime to write better stories.</p>
+                        <p>This was a MVP for our idea, but since hasn't been worked on.</p>
+                    `,
+      tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+    },
+    {
+      name: "TicTacToe",
+      media:
+        '<img src="assets/jpeg/gameplay.jpg" alt="Gameplay" style="width: 100%; height: 100%; object-fit: cover;" />',
+      description: `
+                        <p>Decided to take Tic-Tac-Toe to the next level! The Frontend was created using HTML, CSS and Vanilla JavaScript. Instead of a simple game, I built a database using <span style="color: darkgreen; font-weight: bold">Springboot</span>.</p>
+                        <p>Now players can enter names that get stored and even check their game history. I kept the theme minimalist for a clean look and used toastr notifications for a touch of polish. It all comes together to make a super engaging and user-friendly game!</p>
+                    `,
+      tech: ["Java", "Springboot", "HTMX"],
+    },
+  ],
+};
+
+// State management
+let currentCategory = "android";
+let currentProjectIndex = 0;
+
+// DOM elements
+const categoryButton = document.getElementById("categoryButton");
+const categoryArrow = document.getElementById("categoryArrow");
+const categoryMenu = document.getElementById("categoryMenu");
+const selectedCategory = document.getElementById("selectedCategory");
+
+const projectButton = document.getElementById("projectButton");
+const projectArrow = document.getElementById("projectArrow");
+const projectMenu = document.getElementById("projectMenu");
+const selectedProject = document.getElementById("selectedProject");
+
+const projectMedia = document.getElementById("projectMedia");
+const projectTitle = document.getElementById("projectTitle");
+const projectDescription = document.getElementById("projectDescription");
+const techStack = document.getElementById("techStack");
+
+// Initialize
+function init() {
+  populateProjectDropdown();
+  displayProject();
+
+  // Add event listeners
+  categoryButton.addEventListener("click", () => toggleDropdown("category"));
+  projectButton.addEventListener("click", () => toggleDropdown("project"));
+
+  // Category selection
+  categoryMenu.addEventListener("click", (e) => {
+    if (e.target.classList.contains("dropdown-item")) {
+      selectCategory(e.target.dataset.category);
+    }
+  });
+
+  // Project selection
+  projectMenu.addEventListener("click", (e) => {
+    if (e.target.classList.contains("dropdown-item")) {
+      selectProject(parseInt(e.target.dataset.index));
+    }
+  });
+
+  // Close dropdowns when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".dropdown-container")) {
+      closeAllDropdowns();
+    }
+  });
+}
+
+// Select category
+function selectCategory(category) {
+  currentCategory = category;
+  currentProjectIndex = 0;
+
+  // Update category display
+  const categoryNames = {
+    android: "Native Android",
+    flutter: "Flutter",
+    other: "Others",
+  };
+  selectedCategory.textContent = categoryNames[category];
+
+  // Update active state
+  const categoryItems = categoryMenu.querySelectorAll(".dropdown-item");
+  categoryItems.forEach((item) => {
+    item.classList.toggle("active", item.dataset.category === category);
+  });
+
+  populateProjectDropdown();
+  displayProject();
+  closeDropdown("category");
+}
+
+// Populate project dropdown
+function populateProjectDropdown() {
+  const projects = projectData[currentCategory];
+  projectMenu.innerHTML = "";
+
+  projects.forEach((project, index) => {
+    const item = document.createElement("div");
+    item.className = `dropdown-item ${
+      index === currentProjectIndex ? "active" : ""
+    }`;
+    item.textContent = project.name;
+    item.dataset.index = index;
+    projectMenu.appendChild(item);
+  });
+}
+
+// Select project
+function selectProject(index) {
+  currentProjectIndex = index;
+  displayProject();
+  closeDropdown("project");
+
+  // Update active state
+  const projectItems = projectMenu.querySelectorAll(".dropdown-item");
+  projectItems.forEach((item, i) => {
+    item.classList.toggle("active", i === index);
+  });
+}
+
+// Display current project
+function displayProject() {
+  const project = projectData[currentCategory][currentProjectIndex];
+
+  selectedProject.textContent = project.name;
+  projectMedia.innerHTML = project.media;
+  projectTitle.textContent = project.name;
+  projectDescription.innerHTML = project.description;
+
+  // Update tech stack
+  techStack.innerHTML = "";
+  project.tech.forEach((tech) => {
+    const tag = document.createElement("span");
+    tag.className = "tech-tag";
+    tag.textContent = tech;
+    techStack.appendChild(tag);
+  });
+}
+
+// Toggle dropdown
+function toggleDropdown(type) {
+  const menu = type === "category" ? categoryMenu : projectMenu;
+  const arrow = type === "category" ? categoryArrow : projectArrow;
+
+  const isOpen = menu.classList.contains("open");
+
+  // Close all dropdowns first
+  closeAllDropdowns();
+
+  if (!isOpen) {
+    menu.classList.add("open");
+    arrow.classList.add("open");
+  }
+}
+
+// Close specific dropdown
+function closeDropdown(type) {
+  const menu = type === "category" ? categoryMenu : projectMenu;
+  const arrow = type === "category" ? categoryArrow : projectArrow;
+
+  menu.classList.remove("open");
+  arrow.classList.remove("open");
+}
+
+// Close all dropdowns
+function closeAllDropdowns() {
+  categoryMenu.classList.remove("open");
+  categoryArrow.classList.remove("open");
+  projectMenu.classList.remove("open");
+  projectArrow.classList.remove("open");
+}
+
+// Initialize on page load
+document.addEventListener("DOMContentLoaded", init);
