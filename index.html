@@ -17,6 +17,30 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <style>
+      :root{
+        --bg:#0b0f14;
+        --card:#0f1720;
+        --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
+        --size: clamp(18px, 3.6vw, 28px);
+      }
+      .typewriter-type {
+        font-family: var(--mono);
+        font-size: var(--size);
+        white-space: pre-wrap;
+        max-width: 62ch;
+        color: var(--text-color-primary);
+        border-right: 3px solid var(--teal-blue);
+        animation: blink 1s steps(2, start) infinite;
+        display: inline-block;
+      }
+
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+    </style>
   </head>
   <body>
     <header id="menu" class="header">
@@ -142,9 +166,7 @@
           >
         </h1>
         <div class="home-hero__info">
-          <p class="text-primary">
-            I turn ideas into sleek, scalable mobile apps, <br/> blending native power of Kotlin/Java with <br/>cross-platform efficiency of Flutter, React Native.
-          </p>
+          <div id="type" class="typewriter-type" aria-live="polite" aria-atomic="true"></div>
         </div>
         <div class="home-hero__cta">
           <a
@@ -293,12 +315,12 @@
           <div class="title">Downtown IELTS & Immigration</div>
           <div class="descr">Android Developer</div>
         </li>
-        <li style="--accent-color: #41516c">
+        <li style="--accent-color:  #41516c">
           <div class="date">August 2024 - March 2025</div>
           <div class="title">Blue Planet InfoSolutions</div>
           <div class="descr">Android Developer Intern</div>
         </li>
-        <li style="--accent-color: #fbca3e">
+        <li style="--accent-color:  #fbca3e">
           <div class="date">August 2021 - June 2024</div>
           <div class="title">Arya College, Ludhiana</div>
           <div class="descr">Bachelor Of Computer Applications</div>

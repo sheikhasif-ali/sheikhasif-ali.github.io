@@ -62,3 +62,12 @@ button {
 textarea {
   resize: none;
 }
+
+:root {
+  --bg: #0b0f14;
+  --card: #0f1720;
+  --accent: #7c3aed;
+  --text: #e6eef6;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
+  --size: clamp(18px, 3.6vw, 28px);
+}

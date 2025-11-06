@@ -1,0 +1,32 @@
+
+.typewriter-typewrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.typewriter-type {
+  font-family: var(--mono);
+  font-size: var(--size);
+  white-space: pre;
+  max-width: 62ch;
+  overflow: hidden;
+  color: var(--text);
+}
+
+.typewriter-cursor {
+  width: 2px;
+  height: 1.05em;
+  background: var(--accent);
+  display: inline-block;
+  transform-origin: left;
+  animation: blink 1s steps(2, start) infinite;
+  border-radius: 2px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

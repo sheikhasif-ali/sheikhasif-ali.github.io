@@ -536,7 +536,7 @@ const projectData = {
 
 <a href="https://play.google.com/store/apps/details?id=com.bpsi.friendsofcjn" target="_blank" style="color:#2980b9; text-decoration:underline;">View on Play Store</a>
 `,
-      tech: ["Java","Kotlin","XML"],
+      tech: ["Java", "Kotlin", "XML"],
     },
     {
       name: "Fashion Parade",
@@ -553,7 +553,7 @@ const projectData = {
 <span style="color:#8e44ad;">•</span> Explore <span style="color:#27ae60;">candidate details</span>: skills, college, and experience.<br><br>
 <span style="font-style:italic;">A one-stop hub to connect talent with opportunity.</span>
 `,
-      tech: ["Java","Kotlin","XML"],
+      tech: ["Java", "Kotlin", "XML"],
     },
     {
       name: "CJN Tablet",
@@ -572,7 +572,7 @@ const projectData = {
 
 <a href="https://play.google.com/store/apps/details?id=com.cjn.tabletcjn" target="_blank" style="color:#2980b9; text-decoration:underline;">View on Play Store</a>
 `,
-      tech: ["Java","Kotlin","XML"],
+      tech: ["Java", "Kotlin", "XML"],
     },
     {
       name: "Hue Calculator",
@@ -615,7 +615,7 @@ const projectData = {
                         <p>This was a project assignment for the position of Flutter Developer Intern at <span style="font-weight:bold; color:#a0013b;">S.Rocks.Music</span>. The objective was to recreate the Home Screen from one of their apps using Flutter, to showcase my skills using flutter, firebase and its workings.</p>
                         <p><a href="https://github.com/sheikhasif-ali/srocksmusic_assignment">Github</a></p>
                     `,
-      tech: ["Flutter", "Dart", "Firebase", "MVVM","get_it"],
+      tech: ["Flutter", "Dart", "Firebase", "MVVM", "get_it"],
     },
     {
       name: "Noted",
@@ -657,7 +657,7 @@ const projectData = {
                         <p>This was a project assignment for the position of Flutter Developer Intern at <span style="font-weight:bold; color:#a0013b;">IMotive</span>. The objective was to recreate the Home Screen from one of their apps using Flutter, to showcase my skills using flutter, firebase and its workings.</p>
                         <p><a href="https://github.com/sheikhasif-ali/andaz-assesment">Github</a></p>
                     `,
-      tech: ["Flutter", "Dart", "Firebase", "MVVM","get_it"],
+      tech: ["Flutter", "Dart", "Firebase", "MVVM", "get_it"],
     },
   ],
   other: [
@@ -865,3 +865,191 @@ function closeAllDropdowns() {
 
 // Initialize on page load
 document.addEventListener("DOMContentLoaded", init);
+
+const taglines = [
+  "I turn caffeine and chaos into mobile apps that actually work.",
+  "I turn bugs into features and features into updates.",
+  "I turn random ideas into cross-platform masterpieces (after 12 build errors).",
+  "I turn 'it's just a small change' into an all-nighter.",
+  "I turn coffee, Kotlin, and Flutter into something that occasionally compiles.",
+  "I turn Figma dreams into Play Store realities (and sometimes nightmares).",
+  "I turn TODOs into commits and commits into therapy sessions.",
+  "My commit history reads like a cry for help written in 'WIP' and 'fix typo'.",
+  "I turn JavaScript dependencies into a 5-car pile-up on lap 1.",
+  "Powered by Kotlin, haunted by XML, and deeply suspicious of JavaScript.",
+  "I turn 'Can we add this one more thing?' into 'Sure, let's just ruin the whole sprint'.",
+  "My code is like a video game: lots of bugs, a confusing plot, and the documentation is DLC.",
+  "Fluent in 3 languages: Kotlin, Sarcasm, and Jira-ticket-ese.",
+  "I turn a 45-minute Gradle sync into the entire F1 pre-race show.",
+  "I turn a designer's 'pixel-perfect' mockup into 'good enough' on 300 device sizes.",
+  "Just a developer trying to find a null pointer exception in a world of 'any' types.",
+  "My bike has better-structured code than most front-end frameworks.",
+  "I turn 'compiling' into an AFK status for my raid group.",
+  "I turn 'it's just a small UI change' into a full setup change... for the wrong track.",
+  "My relationship with the CI/CD pipeline is 'It's complicated'.",
+  "I turn a simple 'Context' into a memory leak that haunts three generations of developers.",
+  "I turn 'this should be a Compose preview' into 'I'll just run the whole app again, what's 10 minutes?'.",
+  "I turn 'user feedback' into a new side-quest I immediately abandon.",
+  "My IDE uses more RAM than a a 'node_modules' folder, and I'm proud of that.",
+  "I turn a 'temporary fix' into an archaeological dig for the next poor soul.",
+  "My app's performance is like my F1 team: promising in practice, disappointing on race day.",
+  "I turn a 5-hour debugging session into a 'quick' 50km bike ride to clear my head.",
+  "I turn a pull request into a philosophical debate on the merits of static typing.",
+  "I turn 'git push --force' into a team-building exercise on 'who broke the build'.",
+  "My error-handling is just a series of `try/catch` blocks that log 'this shouldn't happen'.",
+  "Will refactor legacy code for high-end bike parts.",
+  // F1 + Dev
+  "I turn a Friday hotfix into a last-lap lunge with a 50% chance of ending in the wall.",
+  "I turn the team's 'agile' process into a Ferrari strategy call: bold, confusing, and probably wrong.",
+  "I turn a 45-minute Gradle sync into an F1 pit stop: 20 seconds feels like an eternity and something's probably loose.",
+  "I turn 'it works on my machine' into 'WE ARE CHECKING,' then deploy it anyway.",
+  "I turn 'just a small UI change' into a full setup change for the wrong track.",
+
+  // Video Games + Dev
+  "I turn debugging a memory leak into an open-world quest with no map markers.",
+  "I turn a legacy codebase into a Souls-like boss: no guide, one-hit kills, and the bug is the final boss.",
+  "I turn a 3-week sprint into a JRPG grinding session for features nobody asked for.",
+  "I turn the Jira backlog into an open-world RPG: 1 main quest and 300 unfinished side-quests.",
+
+  // JavaScript Hate + Other Themes
+  "I turn a 'TypeError: undefined is not a function' into the final boss of a game I never wanted to play.",
+  "I turn a `node_modules` folder into a poorly optimized RPG inventory: 90% trash I can't drop.",
+  "I turn a single line of JavaScript into a pothole that sends my strongly-typed brain over the handlebars.",
+  "I turn 'we're using React Native' into an F1 strategy call made by a gamer: a lot of confidence, zero contact with reality.",
+  "I turn refactoring JavaScript into fixing a bike with the wrong tools, uphill, in the rain.",
+
+  // Biking + Dev
+  "I turn debugging legacy code into a downhill run on a bike with no brakes.",
+  "I turn a 3-week sprint into an endurance ride on a bike with a slow puncture.",
+  "I turn a 20-file pull request into a technical climb I didn't train for.",
+
+  "I turn legacy code into a Souls-like boss fight: minimal documentation, instant death.",
+
+  "I turn a simple feature request into a 40-hour side-quest I didn't ask for.",
+
+  "I turn 'waiting for the build to finish' into 'just one more round'.",
+
+  "I turn my commit history into a list of failed speedrun attempts.",
+
+  "I turn 'user feedback' into 'new patch notes' for the next deploy.",
+
+  "I turn debugging into 'clipping through the walls' to see what the variables are doing.",
+
+  "I turn the Jira backlog into an open-world RPG: 1 main quest and 300 unfinished side-quests.",
+
+  "I turn a 3-bug hotfix into an unskippable cutscene for the whole team.",
+
+  "I turn my IDE into a skill tree, and I've put all my points into 'Sarcasm' and 'Kotlin'.",
+
+  "I turn a Friday afternoon deploy into 'It's lights out and away we go (into a wall)'.",
+
+  "I turn 'optimizing app performance' into a hunt for a tenth of a second that the PO won't notice.",
+
+  "I turn sprint planning into a Ferrari strategy call: bold, confusing, and probably wrong.",
+
+  "I turn a hotfix into an emergency pit stop for a bug we should have seen coming.",
+
+  "I turn my team's 'agile' process into a 'porpoising' problem: looks fast, feels terrible.",
+
+  "I turn 'it's just a small UI change' into a full setup change... for the wrong track.",
+
+  "I turn a pull request into a 50-lap debate over one corner.",
+
+  "I turn 'it works on my machine' into 'we are checking... we are checking...'",
+
+  "I turn a massive codebase into a technical climb: low gear, high cadence, lots of swearing.",
+
+  "I turn 'code refactoring' into 'tuning my bike': endless tweaks for marginal gains.",
+
+  "I turn a new framework into a new bike: shiny, exciting, and I have no idea how to fix it yet.",
+
+  "I turn a long debugging session into an endurance ride I did not sign up for.",
+
+  "I turn a bug report into a pothole I didn't see until it was too late.",
+
+  "I turn my keyboard into handlebars, just trying to steer this project away from the ditch.",
+
+  "I turn 'undefined is not a function' into a passionate defense of ?.let.",
+
+  "I turn 10 lines of JavaScript into 100 lines of type-safe, null-safe, beautiful Kotlin.",
+
+  "I turn any request to 'just use React Native' into a 20-minute rant about static typing.",
+
+  "I turn a JS any type into a reason to update my resume.",
+
+  "I turn a simple null check in Kotlin into a moment of gratitude that I'm not using JavaScript.",
+
+  "I turn == vs === into a formal complaint to HR.",
+
+  "I turn 'but we can use TypeScript!' into 'so you want Java, but worse?'",
+
+  "I turn a single node_modules folder into a compelling argument for native development.",
+
+  "I turn 'Run App' into a 15-minute coffee break, courtesy of Gradle.",
+
+  "I turn a 3-line dependency change into a 45-minute Gradle sync.",
+
+  "I turn 'it works on my emulator' into a new ticket for 'it's broken on a real Samsung'.",
+
+  "I turn a simple Activity into a complex web of Fragments, ViewModels, and Flows.",
+
+  "I turn a 'temporary fix' into permanent legacy code for the next developer.",
+
+  "I turn a PR comment into a 3-hour philosophical debate on code style.",
+
+  "I turn a 2-week sprint into a 6-week 'agile' marathon.",
+
+  "I turn 20 nested XML layouts into one giant, angry Compose function.",
+];
+
+const config = {
+  typingSpeed: 50,
+  deletingSpeed: 30,
+  pauseAfterTyping: 1400,
+  pauseAfterDeleting: 300,
+};
+
+const el = document.getElementById("type");
+
+let running = true;
+
+function wait(ms) {
+  return new Promise((res) => setTimeout(res, ms));
+}
+
+async function typeText(text) {
+  if (!el) return;
+  for (let i = 0; i < text.length; i++) {
+    while (!running) await wait(120);
+    el.textContent += text[i];
+    await wait(config.typingSpeed);
+  }
+}
+
+async function deleteText() {
+  if (!el) return;
+  while (el.textContent.length) {
+    while (!running) await wait(120);
+    el.textContent = el.textContent.slice(0, -1);
+    await wait(config.deletingSpeed);
+  }
+}
+
+let lastIndex = -1;
+(async function loop() {
+  while (true) {
+    if (!el) return;
+    let randomIndex = Math.floor(Math.random() * taglines.length);
+    if (taglines.length > 1) {
+      while (randomIndex === lastIndex) {
+        randomIndex = Math.floor(Math.random() * taglines.length);
+      }
+    }
+    lastIndex = randomIndex;
+    const text = taglines[randomIndex];
+    await typeText(text);
+    await wait(config.pauseAfterTyping);
+    await deleteText();
+    await wait(config.pauseAfterDeleting);
+  }
+})();
